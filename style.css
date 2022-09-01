@@ -1,0 +1,115 @@
+* {box-sizing: border-box;}
+
+html {
+    background-color: #f4f0f0;
+   
+    cursor: default;
+    user-select: none;
+    display: flex;
+}
+
+body {
+    color: rgb(27, 27, 27);
+    font-size: 0.9rem;
+    line-height: 1.1rem;
+}
+
+a {
+    text-decoration: none;
+    color: #1f1f1f;
+}
+
+span {
+    cursor: pointer;
+    font-size: 3vh;
+}
+
+p {
+    font-size: 0.5rem;
+    font-family: freight-sans-pro, sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding-bottom: 0rem; 
+}
+
+.main-container {
+    border: 2px solid blue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+}
+
+.header-container{
+    padding: 10vh 0 10vh 0;
+    width: 100vw;
+    /* border: 2px solid green; */
+}
+
+.header {
+    font-family: freight-sans-pro, sans-serif;
+
+}
+
+.name {
+    font-family: freight-sans-pro, sans-serif;
+    font-weight: 300;
+    text-align: center;
+    font-size: 6vh;
+    padding: 1.5rem;
+}
+.sub-name {
+    font-family: freight-sans-pro, sans-serif;
+    font-weight: 300;
+    text-align: center;
+    font-size: 1.9vh;
+}
+
+.intro-container {
+    /* border: 2px solid blue; */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    width: 100vw;
+    padding: 0 55vw 7vh 20vw;
+
+}
+
+.intro {
+    font-family: freight-sans-pro, sans-serif;
+}
+
+.para-container-1 {
+    /* border: 2px solid pink; */
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    width: 100vw;
+    padding: 0 10vw 0 10vw;
+
+}
+.para1, .para2 {
+    font-family: freight-sans-pro, sans-serif;
+}
+
+.para1 {
+    padding: 0 10vw 0 15vw;
+    width: 100rem;
+    font-weight: 400;
+}
+
+.para2 {
+    padding: 2vh 10vw 0 0;
+    width: 120rem;
+}
+
+
+
+
+
+
+
+
