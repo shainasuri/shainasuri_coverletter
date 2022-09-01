@@ -33,7 +33,7 @@ p {
 }
 
 .main-container {
-    border: 2px solid blue;
+    /* border: 2px solid blue; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -42,7 +42,7 @@ p {
 }
 
 .header-container{
-    padding: 10vh 0 10vh 0;
+    padding: 15vh 0 5vh 0;
     width: 100vw;
     /* border: 2px solid green;  */
     margin-bottom: 5vh;
@@ -55,18 +55,18 @@ p {
 .name {
     font-family: freight-text-pro, sans-serif;
     font-weight: 100;
-    /* text-align: center; */
+    text-align: center;
     font-size: 4.5vw;
-    padding: 2vw 2vw 2vw 20vw;
+    padding: 2vw 2vw 2vw 2vw;
     letter-spacing: 0.1rem;
 }
 .sub-name {
     font-family: freight-text-pro, sans-serif;
     font-weight: 300;
-    padding: 1vw 2vw 2vw 20vw;
-    /* text-align: center; */
-    font-size: 3.1vh;
-    letter-spacing: 0.2rem;
+    padding: 0vw 2vw 2vw 2vw;
+    text-align: center;
+    font-size: 2.1vh;
+    letter-spacing: 0.1rem;
 }
 
 .intro-container {
@@ -76,12 +76,13 @@ p {
     align-items: flex-start;
     justify-content: center;
     width: 100vw;
-    padding: 0 55vw 15vh 20vw;
+    padding: 0 35vw 15vh 35vw;
 
 }
 
 .intro {
     font-family: freight-text-pro, serif;
+    text-align: center;
 }
 
 .para-container-1 {
@@ -99,7 +100,7 @@ p {
 }
 
 .para1 {
-    padding: 2vh 8vw 5vh 15vw;
+    padding: 2.5vh 8vw 5.5vh 15vw;
     width: 100rem;
     font-weight: 400;
     font-style: italic;
@@ -123,24 +124,47 @@ p {
 }
 
 .para3 {
-    padding: 15vh 8vw 0 10.5vw;
-    width: 103rem;
+    padding: 10vh 25vw 15vh 25vw;
+    text-align: center;
+    /* width: 80rem; */
 
 }
 
+
+
+.para-container-3, .para-container-4 {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    width: 100vw;
+    padding: 0vw 9vw 0 10vw;
+    font-family: freight-text-pro, serif;
+}
+
+
+
 .para4 {
-    padding: 5vw 10vw 10vw 2.5vw;
+    padding: 0vh 8vw 5vh 15vw;
     width: 105rem;
 }
 
-
+.para5 {
+   
+    padding: 3.5vh 10vw 0 0vw;
+    width: 100rem;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 1.1rem;
+    line-height: 1.5rem;
+}
 
 
 
 
 
 @media screen and (max-width: 750px) {
- .name, .intro-container, .intro, .para-container-1, .para-container-2, .para1, .para2, .para3, .para4 {
+ .name, .intro-container, .intro, .para-container-1, .para-container-2, .para-container-3, .para1, .para2, .para3, .para4, .para5 {
         flex-direction: column;
         width: 90vw;
         padding: 5vh 5vh 5vh 2vh;
@@ -148,8 +172,11 @@ p {
     .name {
         font-size: 5vh;
         text-align: center;
-        padding: 10vh 5vh 5vh;
+        padding: 10vh 5vh 2vh 5vh;
         margin: 0;
+    }
+    .sub-name{
+        font-size: 1.5vh;
     }
     .header-container {
         display: flex;
