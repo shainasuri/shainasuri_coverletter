@@ -1,7 +1,7 @@
 * {box-sizing: border-box;}
 
 html {
-    background-color: #f4f0f0;
+    background-color: #ffffff;
    
     cursor: default;
     user-select: none;
@@ -11,7 +11,7 @@ html {
 body {
     color: rgb(27, 27, 27);
     font-size: 0.9rem;
-    line-height: 1.1rem;
+    line-height: 1.2rem;
 }
 
 a {
@@ -44,26 +44,29 @@ p {
 .header-container{
     padding: 10vh 0 10vh 0;
     width: 100vw;
-    /* border: 2px solid green; */
+    /* border: 2px solid green;  */
+    margin-bottom: 5vh;
 }
 
 .header {
     font-family: freight-sans-pro, sans-serif;
-
 }
 
 .name {
-    font-family: freight-sans-pro, sans-serif;
-    font-weight: 300;
-    text-align: center;
-    font-size: 6vh;
-    padding: 1.5rem;
+    font-family: freight-text-pro, sans-serif;
+    font-weight: 100;
+    /* text-align: center; */
+    font-size: 4.5vw;
+    padding: 2vw 2vw 2vw 20vw;
+    letter-spacing: 0.1rem;
 }
 .sub-name {
-    font-family: freight-sans-pro, sans-serif;
+    font-family: freight-text-pro, sans-serif;
     font-weight: 300;
-    text-align: center;
-    font-size: 1.9vh;
+    padding: 1vw 2vw 2vw 20vw;
+    /* text-align: center; */
+    font-size: 3.1vh;
+    letter-spacing: 0.2rem;
 }
 
 .intro-container {
@@ -73,12 +76,12 @@ p {
     align-items: flex-start;
     justify-content: center;
     width: 100vw;
-    padding: 0 55vw 7vh 20vw;
+    padding: 0 55vw 15vh 20vw;
 
 }
 
 .intro {
-    font-family: freight-sans-pro, sans-serif;
+    font-family: freight-text-pro, serif;
 }
 
 .para-container-1 {
@@ -88,22 +91,46 @@ p {
     align-items: flex-start;
     justify-content: center;
     width: 100vw;
-    padding: 0 10vw 0 10vw;
+    padding: 0vw 9vw 0 10vw;
 
 }
 .para1, .para2 {
-    font-family: freight-sans-pro, sans-serif;
+    font-family: freight-text-pro, serif;
 }
 
 .para1 {
-    padding: 0 10vw 0 15vw;
+    padding: 2vh 8vw 5vh 15vw;
     width: 100rem;
     font-weight: 400;
+    font-style: italic;
+    font-size: 1.1rem;
+    line-height: 1.5rem;
 }
 
 .para2 {
-    padding: 2vh 10vw 0 0;
-    width: 120rem;
+    padding: 0 10vw 0 0vw;
+    width: 105rem;
+}
+
+.para-container-2 {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    width: 100vw;
+    padding: 0 10vw 0 10vw;
+    font-family: freight-text-pro, serif;
+}
+
+.para3 {
+    padding: 15vh 8vw 0 10.5vw;
+    width: 103rem;
+
+}
+
+.para4 {
+    padding: 5vw 10vw 10vw 2.5vw;
+    width: 105rem;
 }
 
 
@@ -112,4 +139,23 @@ p {
 
 
 
-
+@media screen and (max-width: 750px) {
+ .name, .intro-container, .intro, .para-container-1, .para-container-2, .para1, .para2, .para3, .para4 {
+        flex-direction: column;
+        width: 90vw;
+        padding: 5vh 5vh 5vh 2vh;
+    }
+    .name {
+        font-size: 5vh;
+        text-align: center;
+        padding: 10vh 5vh 5vh;
+        margin: 0;
+    }
+    .header-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+        margin: 0;
+    }
+}
